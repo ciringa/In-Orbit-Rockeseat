@@ -1,0 +1,7 @@
+POST http://127.0.0.1:3454/app/goals/create HTTP/1.1
+content-type: application/json
+
+{
+   "Title":"test",
+   "desiredWeeklyFrequency":4
+}

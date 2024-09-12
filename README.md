@@ -1,6 +1,11 @@
-# NLW Pocket: JavaScript (back-end Node.js)
+# In-Orbit-Aplication
+Sistema de metas funcional utilizando techs de primeira categoria
 
-Esse repositório contém o código desenvolvido durante o evento "NLW Pocket: JavaScript" da Rocketseat.
+## O que aprendi durante o projeto?
+- Drizzle ORM
+- DaysJs library
 
-
-
+## mudanças em comparaçao com o projeto original
+- uso da biblioteca fakerJs
+- uso de repositorie pattern 
+- o container inclui uma imagem do pg admin

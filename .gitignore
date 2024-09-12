@@ -1,3 +1,6 @@
-node_modules
-dist
+## get dependencies out of the file
+/node_modules
+
+## get security informations out
 .env
+

@@ -1,12 +1,26 @@
-name: pocket-js
+name: "inorbitrocketseatfork"
 
 services:
-  pg:
-    image: bitnami/postgresql:latest
+  db:
+    image: "bitnami/postgresql:latest"
     ports:
-      - '5432:5432'
+      - 5432:5432
     environment:
-      - POSTGRES_USER=docker
-      - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=pocket-js
+      - POSTGRES_USER=InOrbitApi
+      - POSTGRES_PASSWORD=InOrbitApi123
+      - POSTGRES_DB=InOrbitApiDatabase
+  admin:
+    image: dpage/pgadmin4:latest
+    restart: unless-stopped
+    ports:
+      - 8081:80
 
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: password
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+
+volumes:
+  pgadmin:
+    driver: local
